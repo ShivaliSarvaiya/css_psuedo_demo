@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Classics</title>
+<style>
+    body {
+        background-color: grey;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.h1, h2, h4 {
+font-family: Arial, Helvetica, sans-serif;
+}
+.h4 {
+    font-size: 20px;
+}
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    background: white;
+    padding: 20px;
+}
+a {
+    color: red;
+}
+a:visited {
+    color: pink;
+}
+a.special:hover {
+    color: blueviolet;
+}
+#hover-div {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+}
+
+#hover-div:hover {
+    background-color: lightblue;
+}
+p:first-child {
+font-weight: bold;
+}
+
+p:last-child {
+    color: lightblue;
+}
+
+div:empty {
+  outline: 2px solid deeppink;
+  height: 1em;
+}
+
+
+</style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Welcome to Web 2!</h1>
+        <h4>Today we will mess with some psuedo classics and elements</h4>
+        <h2> Lets first dive deeper into CSS</h2>
+        <p>If we think of CSS in terms of selectors, properties, and values, then a typical CSS entry would look like this:</p>
+
+        <pre>
+            <code>
+                selector {property: value}
+            </code>
+        </pre>
+        <p>To style the above, we need to add two tags together, we call this CSS combinators</p>
+
+        <h2> What are Psuedo Classes?</h2>
+        <p>Again, if we think of CSS in terms of selectors, properties, and values, then a psuedo class is an add-on to a selector</p>
+
+        <pre>
+            <code>
+                selector:psuedo_class {property: value;}
+            </code>
+        </pre>
+<a href="https://www.google.com"> Go to google</a>
+<a href="https://www.bing.com"> Bing!</a>
+    </div>
+    <div id="hover-div">
+        <p>here we will add a hover to our div</p>
+        <p>what do you think?</p>
+    </div>
+    <h4>We can even call on specific selectors depending on their heirarchy</h4>
+    <p>style will change above</p>
+<h4>This is a new class that I added, when a div is empty and has no content in it</h4>
+<p>Element with no content:</p>
+<div></div>
+
+<p>Element with comment:</p>
+<div><!-- A comment --></div>
+
+
+
+
+</body>
+</html>
